@@ -1,0 +1,23 @@
+.logo {
+  font-family: var(--secondary-font-family);
+  // font-style: normal;
+  font-weight: bold;
+  @include font(26px, 1.19, 0.03em);
+  color: var(--logo-black);
+    &:focus,
+    &:hover {
+    // outline: transparent;
+  }
+}
+
+.logo--blue {
+  color: var(--active-link);
+}
+  
+.logo--white {
+  color: var(--main-white);
+}
+
+.navigation__logo {
+  margin-right: 90px;
+}

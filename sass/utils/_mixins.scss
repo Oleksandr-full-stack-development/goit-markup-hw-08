@@ -1,0 +1,12 @@
+@mixin font($fs, $lh, $ls)
+{
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin display($display, $algnitms)
+{
+    display: $display;
+    align-items: $algnitms;
+}

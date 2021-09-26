@@ -1,0 +1,45 @@
+.img-list {
+  display: flex;
+}
+
+.img-list__item {
+  justify-content: space-between;
+  position: relative;
+  
+    &:not(:last-child) {
+      margin-right: 30px;
+  }
+
+}
+
+.what-we-do-section__title,
+.our-team__title {
+  font-style: normal;
+  font-weight: bold;
+  @include font(36px, 1.16, 0.03em);
+  text-align: center;
+  color: var(--main-black-color);
+  margin-bottom: 50px;
+}
+
+.what-we-do-thumb {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+
+.what-we-do-thumb__title {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  @include font(14px, 1.14, 0.03em);
+}

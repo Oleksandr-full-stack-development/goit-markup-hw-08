@@ -1,0 +1,97 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--hero-footer-background);
+  /* max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.social-link-thumb__title {
+  font-family: Roboto;
+  // font-style: normal;
+  font-weight: bold;
+  @include font(14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--main-white);
+  margin-bottom: 20px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.address-footer__text,
+.address-footer__link-mail-tel {
+  margin-bottom: 9px;
+  display: block;
+}
+
+.address-footer__text {
+    // font-style: normal;
+    @include font(14px, 1.71, 0.03em);
+    color: var(--main-white);
+}
+    
+.address-footer__link-mail-tel {
+      // font-style: normal;
+      @include font(14px, 1.71, 0.03em);
+      color: var(--footer-head-color-link-tel);
+    }
+
+
+.link-mail-tel-footer {
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+       color: #2196f3;
+  }
+
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__social-link-thumb {
+  margin-left: 70px;
+}
+
+.sign-up__text {
+  color: var(--main-white);
+  font-weight: bold;
+  @include font(14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.telegram-sign-up-thumb {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__sign-up {
+  margin-left: 93px;
+}
+
+.sign-up-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  color: var(--main-white);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__sign-up-input {
+  margin-top: 20px;
+  margin-right: 12px;
+}
+
