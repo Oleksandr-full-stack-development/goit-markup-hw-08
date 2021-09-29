@@ -1,4 +1,4 @@
-.sign-up-button {
+.form__button {
     @include display (flex, center);
     border: none;
     border-radius: 4px;
@@ -12,14 +12,15 @@
     background-color: var(--active-link);
     cursor: pointer;
     text-align: center;
+    
   }
 
-  .sign-up-icon {
+  .form__icon {
     fill: var(--main-white);
     width: 24px;
     height: 24px;
   }
   
-  .sign-up-icon__sign-up-button {
+  .form__icon {
     margin-left: 10px;
   }

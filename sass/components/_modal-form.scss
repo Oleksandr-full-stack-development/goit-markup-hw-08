@@ -13,37 +13,32 @@
   @include font(20p, 1.15, 0.03em);
 }
 
-.modal-form-field {
+.modal-form__label {
   @include font(12px, 1.16, 0.01em);
+  margin-bottom: 10px;
   // font-weight: normal;
 }
 
-.modal-form__modal-form-field {
-  margin-bottom: 10px;
-}
 
-.modal-form-input-wrapper {
+.modal-form__wrapper {
   position: relative;
   display: block;
+  margin-top: 6px; 
 }
 
-.modal-form__modal-form-input-wrapper {
-  margin-top: 6px;  
-}
-
-.accept-policy__modal-form-input-wrapper {
+.modal-form__wrapper--checkbox {
   display: inline-flex;
   position: relative;
   justify-content: center;
   margin-top: 0px;
 }
 
-.modal-form-checkbox {
+.modal-form__checkbox {
   top: 10px;
   left: 16px;
 }
 
-.modal-form-input-wrapper__input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -56,7 +51,7 @@
         }
 }
 
-.modal-form-input-wrapper__icon {
+.modal-form__icon {
   position: absolute;
   display: block;
   /* background-color: rgba(0, 0, 0, 0.15); */
@@ -65,13 +60,13 @@
   transform: translateY(-50%);
   fill: black;
   /* transition: background-color 250ms linear; */
-    .modal-form-input-wrapper__input:focus + & {
+    .modal-form__input:focus + & {
         fill: var(--active-link);
   }
 
 }
 
-.modal-form-field__modal-form-message {
+.modal-form__textarea {
   width: 100%;
   height: 120px;
   margin-top: 6px;
@@ -90,21 +85,21 @@
     }
 }
 
-.modal-form-checkbox-label {
+.modal-form__label--checkbox {
   @include display(flex, center);
   font-family: Roboto;
   // font-style: normal;
   // font-weight: normal;
   @include font(14px, 1.71, 0.03em);
 
-        .modal-form-checkbox:checked + &::before {
+        .modal-form__checkbox:checked + &::before {
         /* background-color: var(--accent-color); */
         /* box-shadow: inset 0 0 0 4px #ffffff;  */
         width: 16px;
         height: 15px;
         background-image: url(../images/icon_check.svg);
   }   
-        .modal-form-checkbox:focus + &::before {
+        .modal-form__checkbox:focus + &::before {
             outline: 1px solid var(--active-link);
          }
          
@@ -118,15 +113,12 @@
           margin-right: 10px;
           background-image: url(../images/Vector-checkbox.svg);
         }
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
 }
 
-.modal-form-input-wrapper__modal-form-checkbox-label {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-
-.modal-form-label-link {
+.modal-form__link {
   text-decoration: underline;
   color: #2196f3;
 }

@@ -1,13 +1,19 @@
-.button-section {
-  padding-top: 98px;
-  padding-bottom: 90px;
+.button-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: -8px;
+  margin-top: -8px;
 }
 
-.button-section__title{
-  display: none;
+.button-list__item {
+  flex-basis: calc(100% - 40px)/5;
+  margin-left: 8px;
+  margin-top: 8px;
 }
 
-.portfolio-name {
+.portfolio-list__name {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
@@ -24,7 +30,7 @@
   border-bottom-color: var(--border);  
 }
 
-.portfolio-name__title {
+.portfolio-list__title {
   margin-bottom: 4px;
   // font-style: normal;
   font-weight: bold;
@@ -32,25 +38,7 @@
   color: var(--main-black-color);
 }
 
-.button-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.button-section__button-list {
-  margin-left: -8px;
-  margin-top: -8px;
-}
-
-.button-list__item {
-  flex-basis: calc(100% - 40px)/5;
-  margin-left: 8px;
-  margin-top: 8px;
-}
-
-.portfolio-name__text {
+.portfolio-list__text--short {
   // font-weight: normal;
   @include font(16px, 1.87, 0.03em);
   color: var(--paragraphs-and-contacts);
@@ -69,15 +57,15 @@
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.portfolio-list__link:hover .portfolio-list-thumb,
-.portfolio-list__link:focus .portfolio-list-thumb {
+.portfolio-list__link:hover .portfolio-list__thumb,
+.portfolio-list__link:focus .portfolio-list__thumb {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   border-color: transparent;
   // outline: none;
 }
 
-.portfolio-list-thumb {
+.portfolio-list__thumb {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -88,12 +76,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-thumb__img {
+.portfolio-list__img {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-list-thumb__text {
+.portfolio-list__text {
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
@@ -112,9 +100,9 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list__link:focus .portfolio-list-thumb__text,
-.portfolio-list__link:hover .portfolio-list-thumb__text,
-.portfolio-list__link:focus .portfolio-list-thumb__text {
+.portfolio-list__link:focus .portfolio-list__text,
+.portfolio-list__link:hover .portfolio-list__text,
+.portfolio-list__link:focus .portfolio-list__text {
   transform: translateY(0%);
   // outline: none;
   opacity: 1;

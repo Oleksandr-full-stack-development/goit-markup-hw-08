@@ -1,8 +1,8 @@
-.img-list {
+.works {
   display: flex;
 }
 
-.img-list__item {
+.works__item {
   justify-content: space-between;
   position: relative;
   
@@ -12,17 +12,7 @@
 
 }
 
-.what-we-do-section__title,
-.our-team__title {
-  font-style: normal;
-  font-weight: bold;
-  @include font(36px, 1.16, 0.03em);
-  text-align: center;
-  color: var(--main-black-color);
-  margin-bottom: 50px;
-}
-
-.what-we-do-thumb {
+.works__thumb {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -35,7 +25,7 @@
   overflow: auto;
 }
 
-.what-we-do-thumb__title {
+.works__text {
   text-transform: uppercase;
   color: #ffffff;
   font-family: inherit;

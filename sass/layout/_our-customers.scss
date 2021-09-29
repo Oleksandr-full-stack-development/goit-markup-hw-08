@@ -1,26 +1,14 @@
-.our-customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
-.our-customers__title {
-    margin-bottom: 50px;
-    justify-content: center;
-    display: flex;
-    @include font(36px, 1.16, 0.03em);
-    color: var(--main-black-color);
-}
-
-.our-customer-list {
+.customers {
   display: flex;
   justify-content: space-between;
 }
 
-.our-customer-list__item {
+.customers__item {
   display: flex;
 }
 
-.our-customer-link {
+.customers__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -38,14 +26,14 @@
     // outline: transparent;
   }
   
-  &:focus .our-customer-link__icon,
-  &:hover .our-customer-link__icon {
+  &:focus .customers__icon,
+  &:hover .customers__icon {
     fill: var(--active-link);
   }
 
 }
 
-.our-customer-link__icon {
+.customers__icon {
   fill: var(--logo-color);
   transition-property: fill;
   transition-duration: 250ms;

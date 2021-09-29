@@ -1,0 +1,8 @@
+.section__title {
+    font-style: normal;
+    font-weight: bold;
+    @include font(36px, 1.16, 0.03em);
+    text-align: center;
+    color: var(--main-black-color);
+    margin-bottom: 50px;
+  }

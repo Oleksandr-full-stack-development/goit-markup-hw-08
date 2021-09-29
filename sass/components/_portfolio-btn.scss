@@ -1,4 +1,4 @@
-.projects-button {
+.button-list__button {
   padding-right: 22px;
   padding-left: 22px;
   padding-top: 6px;
@@ -18,8 +18,8 @@
   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-button:hover,
-.projects-button:focus {
+.button-list__button:hover,
+.button-list__button:focus {
     background-color: var(--active-link);
     cursor: pointer;
     color: var(--main-white);

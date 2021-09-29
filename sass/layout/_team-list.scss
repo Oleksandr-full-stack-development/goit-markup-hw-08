@@ -2,20 +2,20 @@
   background-color: var(--secondary-background-color);
 }
 
-.team-list {
+.team {
   display: flex;
   margin-top: -30px;
   margin-left: -30px;
   flex-wrap: wrap;
 }
 
-.team-list__item {
+.team__item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 120px) / 4);
 }
 
-.team-member {
+.team__thumb {
   @include display(flex, center);
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@
   border-bottom-left-radius: 4px;
 }
 
-.team-member__title {
+.team__title {
   margin-bottom: 10px;
   // font-style: normal;
   font-weight: 500;
@@ -37,7 +37,7 @@
   color: var(--main-black-color);
 }
   
-.team-member__text {
+.team__text {
   margin-bottom: 16px;
   // font-weight: normal;
   @include font(16px, 1.18, 0.03em);

@@ -10,8 +10,10 @@
 
 //Components
 @import "./components/logo";
+@import "./components/section-title";
 @import "./components/hero-btn";
 @import "./components/social-icons-link";
+@import "./components/social-icons-link-footer";
 @import "./components/portfolio-btn";
 @import "./components/backdrop";
 @import "./components/close-button-round";
@@ -26,7 +28,7 @@
 @import "./layout/hero";
 @import "./layout/footer";
 @import "./layout/features";
-@import "./layout/what-we-do";
+@import "./layout/works";
 @import "./layout/team-list";
 @import "./layout/our-customers";
 @import "./layout/portfolio-page";
