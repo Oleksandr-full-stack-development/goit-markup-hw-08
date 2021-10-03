@@ -1,0 +1,28 @@
+%link {
+    padding: 8px 0;
+    text-decoration: none;
+    transition: color $time $timing-function;
+    &:hover,
+    &:focus {
+      color: $extra-color;
+    }
+  }
+  
+  %white-uppercase-text {
+    color: $main-white-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    align-self: flex-start;
+  }
+  
+  %social-icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }

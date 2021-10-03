@@ -2,6 +2,7 @@
   font-family: var(--secondary-font-family);
   // font-style: normal;
   font-weight: bold;
+  display: block;
   @include font(26px, 1.19, 0.03em);
   color: var(--logo-black);
     &:focus,
@@ -18,6 +19,6 @@
   color: var(--main-white);
 }
 
-.navigation__logo {
-  margin-right: 90px;
-}
+// .navigation__logo {
+//   margin-right: 90px;
+// }

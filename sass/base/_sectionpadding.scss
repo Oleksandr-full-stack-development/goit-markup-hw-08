@@ -1,8 +1,26 @@
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section--white-background {
+  background-color: var(--secondary-background-color);
+}
+
+@media screen and (min-width:1200px) {
+  .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+}
 
-.section--withoutpadding {
-  padding-top: 0px;
+.section--we-do {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
