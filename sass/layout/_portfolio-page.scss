@@ -30,13 +30,13 @@
 //   border-bottom-color: var(--border);  
 // }
 
-// .portfolio-list__title {
-//   margin-bottom: 4px;
-//   // font-style: normal;
-//   font-weight: bold;
-//   @include font(18px, 2, 0.06em);
-//   color: var(--main-black-color);
-// }
+.portfolio-list__title {
+  margin-bottom: 4px;
+  // font-style: normal;
+  font-weight: bold;
+  @include font(18px, 2, 0.06em);
+  color: var(--main-black-color);
+}
 
 // .portfolio-list__text--short {
 //   // font-weight: normal;
@@ -260,14 +260,15 @@
 //   margin-bottom: 0;
 // }
 
-.portfolio-list__title {
-  white-space: nowrap;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $main-text-color;
-}
+// .portfolio-list__title {
+//   // white-space: nowrap;
+//   // font-weight: bold;
+//   // font-size: 18px;
+//   // line-height: 2;
+//   // letter-spacing: 0.06em;
+//   // color: $main-text-color;
+
+// }
 
 .portfolio-list__text--short {
   font-size: 16px;
