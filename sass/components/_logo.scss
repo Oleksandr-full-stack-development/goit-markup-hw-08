@@ -1,14 +1,9 @@
 .logo {
   font-family: var(--secondary-font-family);
-  // font-style: normal;
   font-weight: bold;
   display: block;
   @include font(26px, 1.19, 0.03em);
   color: var(--logo-black);
-    &:focus,
-    &:hover {
-    // outline: transparent;
-  }
 }
 
 .logo--blue {
