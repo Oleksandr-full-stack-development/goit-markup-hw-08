@@ -16,7 +16,7 @@
 <body>
 <!--Шапка-->
 <!--Шапка-->
-<header class="header ">
+<header class="header">
     <div class="container header__container">
         <nav class="navigation">
             <a href="./index.html" lang="en" target="" rel="" class="logo navigation__logo"><span class="logo--blue">Web</span>Studio</a>
@@ -24,12 +24,12 @@
                     <li class="site-nav__item"><a href="./studio.html" class="site-nav__link site-nav__link--current">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul>
-                <button type="button" class="burger-menu" data-menu-open>
-                    <svg class="burger-menu__icon">
-                        <use href="./images/icons.svg#icon-burger" class="burger-menu__icon-item"></use>
-                    </svg>
-                </button>   
+                </ul>   
+            <button type="button" class="burger-menu" data-menu-open>
+                <svg class="burger-menu__icon">
+                    <use href="./images/icons.svg#icon-menu_40px" class="burger-menu__icon-item"></use>
+                </svg>
+            </button>
         </nav>
             <ul class="contacts header__contacts">
                 <li class="contacts__item">
@@ -47,39 +47,41 @@
                     +38 096 111 11 11</a>
                 </li>
             </ul>
-            <div class="mobile-menu" data-menu>
-                <button type="button" class="mobile-menu__close-button" data-menu-close>
-                    <svg class="mobile-menu__icon">
-                        <use href="./images/icons.svg#icon-close" class="mobile-menu__icon-cross"></use>
-                    </svg>
-                </button>
-                <nav class="mobile-navigation navigation">
-                    <ul class="mobile-nav-list nav-list">
-                        <li class="nav-list__item list"><a href="./index.html" class="nav-list__link">Студия</a>
-                        </li>
-                        <li class="nav-list__item list"><a href="./portfolio.html" class="nav-list__link  nav-list__link--current">Портфолио</a></li>
-                        <li class="nav-list__item list"><a href="" class="nav-list__link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="mobile-menu__contacts">
-                        <ul class="mobile-auth-list auth-list">
-                            <li class="auth-list__contacts list">
-                                <a href="tel:+380961111111" class="auth-list__link auth-list__link--mob">+38 096 111 11 11</a>
-                            </li>
-                            <li class="auth-list__contacts list">
-                                <a href="mailto:info@devstudio.com" class="auth-list__link">info@devstudio.com</a>
-                            </li>
-                        
-                        </ul>
-                        <ul class="mobile-social-list">
-                            <li class="mobile-social-item list"><a href="" class="mobile-social-link">Instagram</a></li>
-                            <li class="mobile-social-item list"><a href="" class="mobile-social-link">Twitter</a></li>
-                            <li class="mobile-social-item list"><a href="" class="mobile-social-link">Facebook</a></li>
-                            <li class="mobile-social-item list"><a href="" class="mobile-social-link">LinkedIn</a></li>
-                        </ul>
-                </div>
+    </div>
+
+    <!--mobile menu -->
+    
+    <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu__close-button" data-menu-close>
+            <svg class="mobile-menu__icon">
+                <use href="./images/icons.svg#icon-close_40px" class="mobile-menu__icon-cross"></use>
+            </svg>
+        </button>
+        <nav class="mobile-navigation navigation">
+            <ul class="mobile-nav-list site-nav">
+                <li class="site-nav__item list"><a href="" class="site-nav__link site-nav__link--current">Студия</a></li>
+                <li class="site-nav__item list"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                <li class="site-nav__item list"><a href="" class="site-nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__contacts">
+            <ul class="mobile-auth-list contacts">
+                <li class="contacts__item list">
+                    <a href="tel:+380961111111" class="contacts__link contacts__link--mob">+38 096 111 11 11</a>
+                </li>
+                <li class="contacts__item list">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a>
+                </li>
             
-            </div>
+            </ul>
+            <ul class="mobile-social">
+                <li class="mobile-social__item list"><a href="" class="mobile-social__link">Instagram</a></li>
+                <li class="mobile-social__item list"><a href="" class="mobile-social__link">Twitter</a></li>
+                <li class="mobile-social__item list"><a href="" class="mobile-social__link">Facebook</a></li>
+                <li class="mobile-social__item list"><a href="" class="mobile-social__link">LinkedIn</a></li>
+            </ul>
+        </div>
+        
     </div>
 </header>
 
