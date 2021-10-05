@@ -1135,6 +1135,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .footer-social {
+    display: block;
     margin-left: 70px;
   }
 }
