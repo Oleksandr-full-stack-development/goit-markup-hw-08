@@ -509,6 +509,14 @@ address {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-form__label--checkbox {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+
 .modal-form__checkbox:checked + .modal-form__label--checkbox::before {
   /* background-color: var(--accent-color); */
   /* box-shadow: inset 0 0 0 4px #ffffff;  */
@@ -1053,7 +1061,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .footer-contacts {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -1115,14 +1123,14 @@ address {
   }
 }
 
-.address__text {
+.address__item:not(:last-child) {
   color: #ffffff;
   text-decoration: none;
   margin-bottom: 8px;
 }
 
 @media screen and (min-width: 1200px) {
-  .address__text {
+  .address__item:not(:last-child) {
     margin-bottom: 9px;
   }
 }

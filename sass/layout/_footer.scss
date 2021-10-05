@@ -51,7 +51,7 @@
     margin: 0;
   }
   @media screen and (min-width:1200px) {
-    display: inline-block;
+    display: block;
 }
 }
 
@@ -110,7 +110,7 @@
   }
 }
 
-.address__text {
+.address__item:not(:last-child) {
   
   color: $main-white-color;
   text-decoration: none;

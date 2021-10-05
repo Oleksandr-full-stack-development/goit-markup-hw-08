@@ -88,9 +88,11 @@
 .modal-form__label--checkbox {
   @include display(flex, center);
   font-family: Roboto;
-  // font-style: normal;
-  // font-weight: normal;
   @include font(14px, 1.71, 0.03em);
+  
+  @media screen and (max-width:1199px) {
+    @include font(12px, 1.16, 0.03em);
+  }
 
         .modal-form__checkbox:checked + &::before {
         /* background-color: var(--accent-color); */
