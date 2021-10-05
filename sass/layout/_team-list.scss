@@ -41,8 +41,6 @@
   @extend %social-icons;
 }
 .team__thumb {
-  @include flex(center);
-  flex-direction: column;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: $main-white-color;

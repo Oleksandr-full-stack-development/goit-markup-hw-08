@@ -10,8 +10,13 @@
   background-color: #2f303a;
   background-position: center;
   max-height: 603px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+
   @media screen and (max-width: 480px) {
     max-width: 480px;
+    max-height: 603px;
   }
   @media screen and (min-width: 1200px) {
     max-height: 252px;
@@ -21,43 +26,55 @@
   @media screen and (max-width: 767px) {
     max-width: 450px;
   }
-  @media screen and (min-width: 768px) {
-  }
+  // @media screen and (min-width: 768px) {
+  // }
   @media screen and (min-width: 1200px) {
     display: flex;
+    justify-content: baseline;
     justify-content: space-between;
-  }
+  // }
 }
+}
+// .footer-contacts {
+//   margin: 0 auto;
+//   @media screen and (min-width: 768px) {
+//     align-items: baseline;
+//     // justify-content: space-around;
+//     flex-direction: column;
+//   }
+// }
 .footer-contacts {
-  @media screen and (min-width: 768px) {
-    align-items: baseline;
-    justify-content: space-around;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width:768px) {
+    margin: 0;
   }
+  @media screen and (min-width:1200px) {
+    display: block;
 }
-.footer-contacts {
-  @media screen and (min-width:768px) and (max-width:1199px) {
-      margin-left: 78px;
-  }
 }
-
 
 .footer-contacts-tablet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media screen and (min-width:768px) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     align-items: baseline;
   }
 }
 
 
-
-.footer-social {
-  @media screen and (max-width:768px) {
-    margin-right: 87px;
+// .footer-social {
+//   @media screen and (max-width:768px) {
+//     margin-right: 87px;
     
-  }
-}
+//   }
+// }
 
 .footer__logo {
   margin-bottom: 20px;
@@ -75,14 +92,20 @@
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 320px) and (max-width: 1199px) {
     text-align: center;
   }
+  @media screen and (min-width:1200px) {
+    display: block;
+  }
 }
 
 .address__text {
-  display: block;
+  
   color: $main-white-color;
   text-decoration: none;
   margin-bottom: 8px;
@@ -103,13 +126,13 @@
 }
 
 .footer-social {
-  height: 80px;
+  // height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media screen and (max-width: 767px) {
-    margin: 60px auto;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -139,7 +162,7 @@
   width: 44px;
   height: 44px;
   margin-left: 10px;
-  flex-basis: calc((100%-40px) / 4);
+  flex-basis: calc((100% - 40px) / 4);
 
   &:nth-child(1) {
     margin-left: 0;
@@ -172,18 +195,30 @@
 
 .form {
   max-width: 450px;
+  margin-top: 60px;
 
-  @media screen and (max-width: 767px) {
-    @include flex(center);
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 60px auto 0;
   }
-  @media screen and (max-width: 1199px) {
-    margin: 60px auto;
-    text-align: center;
-  }
+//   @media screen and (max-width: 1199px) {
+//     // margin: 60px auto;
+//     text-align: center;
+//   }
   @media screen and (min-width: 1200px) {
-    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0; 
     max-width: 570px;
+
+  }
+}
+
+.footer__form {
+  @media screen and (min-width:1200px)  {
+    margin-left: 93px;
+    
   }
 }
 
@@ -199,20 +234,26 @@
 }
 
 .form-thumb {
-  @media screen and (max-width: 1199px) {
-    @include flex(center);
-    flex-direction: column;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  // @media screen and (max-width: 1199px) {
+  //   @include flex(center);
+  //   flex-direction: column;
+  //   width: 100%;
+  // }
   @media screen and (min-width: 1200px) {
-    @include flex(center, baseline);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
     margin-top: 20px;
   }
 }
 
 .form__input {
   height: 50px;
-
+  width: 100%;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -223,15 +264,16 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
-  @media screen and (max-width: 1199px) {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+  // @media screen and (max-width: 1199px) {
+  //   width: 100%;
+  //   margin-bottom: 20px;
+  
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
   }
 }
+
 
 .form__button {
   @include flex(center);
@@ -239,6 +281,7 @@
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 28px;
+  margin-top: 20px;
 }
 
 .form__icon {

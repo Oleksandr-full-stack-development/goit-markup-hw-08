@@ -10,7 +10,12 @@
 .features__text {
   @include font(14px, 1.72, 0.03em);
   color: var(--paragraphs-and-contacts);
-  margin-bottom: 30px;
+}
+
+@media screen and (max-width:767px) {
+  .features__item:not(:last-child){
+    margin-bottom: 30px;
+  }
 }
 
 .features__icon {
