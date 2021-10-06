@@ -296,12 +296,18 @@
 }
 .mobile-social {
   @include flex(flex-start);
+  flex-wrap: wrap;
 }
+
+.mobile-social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
 .mobile-social__item {
   position: relative;
-  & + & {
-    margin-left: 20px;
-  }
+  // & + & {
+  //   margin-left: 20px;
+  // }
   &:not(:last-child)::after {
     position: absolute;
     content: "";
